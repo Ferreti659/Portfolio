@@ -1,0 +1,43 @@
+
+@media (max-width: 600px), (max-device-width: 600px){
+    body, html {
+        font: 12vw / 1.2em untitled-sans, helvetica, sans-serif;
+    }
+}
+
+@media (max-width: 950px), (max-device-width: 950px){
+    body, html, .collapsible {
+    font: 7.5vw / 1.2em untitled-sans, helvetica, sans-serif;
+    }
+}  
+
+body{
+    font: 6.75vw / 1.1em untitled-sans, helvetica, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+    background: #29211E;
+    color: #fff;
+    letter-spacing: -2px;
+}
+
+.collapsible {
+    font: 6.75vw / 1.1em untitled-sans, helvetica, sans-serif;
+    cursor: pointer;
+    padding: 18px;
+    width: 22%;
+    border: none;
+    text-align: left;
+    outline: none;
+    background-color: #29211E;
+    color: #fff;
+  }
+
+  .content {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+  }
+
+  .active, .collapsible:hover {
+    background-color: #14110f;
+  }
