@@ -12,6 +12,7 @@
 }  
 
 body{
+   
     font: 6.75vw / 1.1em untitled-sans, helvetica, sans-serif;
     -webkit-font-smoothing: antialiased;
     overflow-x: hidden;
@@ -21,13 +22,18 @@ body{
     margin: 0;
 }
 
+header{
+  margin-top: 10px;
+}
+
 
 
 
 /*collapsible*/
 
   .collapsible {
-    background-color: #29211E;
+    z-index: 1;
+    background:transparent;
     color: white;
     cursor: pointer;
     padding: 18px;
@@ -39,7 +45,7 @@ body{
   }
   
   .active, .collapsible:hover {
-    background-color:#29211E;
+    background:transparent;
   }
   
   .content {
@@ -47,7 +53,7 @@ body{
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.2s ease-out;
-    background-color: #29211E;
+    background:transparent;
   }
 
 
@@ -77,6 +83,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    
   }
 
   .card {
@@ -169,30 +176,30 @@ body{
   /*fondo*/
 
   .bg {
+    z-index:-1;
     position: fixed;
-    top: -50%;
+     /*top: -50%;
     left: -50%;
     right: -50%;
-    bottom: -50%;
-    width: 200%;
-    height: 200vh;
+    bottom: -50%;   */
+    width: 100%;
+    height: 100vw ;
     background: transparent url('http://assets.iceable.com/img/noise-transparent.png') repeat 0 0;
     background-repeat: repeat;
     animation: bg-animation .2s infinite;
-    opacity: .9;
+    opacity: .5;
     visibility: visible;
   }
-  
-  @keyframes bg-animation {
+ @keyframes bg-animation {
       0% { transform: translate(0,0) }
-      10% { transform: translate(-5%,-5%) }
-      20% { transform: translate(-10%,5%) }
+      10% { transform: translate(-5px,-5px) }
+      20% { transform: translate(-10px,5px) }
       30% { transform: translate(5%,-10%) }
-      40% { transform: translate(-5%,15%) }
-      50% { transform: translate(-10%,5%) }
-      60% { transform: translate(15%,0) }
-      70% { transform: translate(0,10%) }
-      80% { transform: translate(-15%,0) }
-      90% { transform: translate(10%,5%) }
-      100% { transform: translate(5%,0) }
-  }
+      40% { transform: translate(-5px,15px) }
+      50% { transform: translate(-10px,5px) }
+      60% { transform: translate(15px,0) }
+      70% { transform: translate(0,10px) }
+      80% { transform: translate(-15px,0) }
+      90% { transform: translate(10px,5px) }
+      100% { transform: translate(5px,0) }
+  } 
