@@ -11,6 +11,11 @@
     }
 }  
 
+*{
+  cursor: url(img/cursor.svg) , auto;
+}
+
+
 body{
    
     font: 6.75vw / 1.1em untitled-sans, helvetica, sans-serif;
@@ -32,12 +37,13 @@ header{
 /*collapsible*/
 
   .collapsible {
+
     z-index: 1;
     background:transparent;
-    color: white;
+    color: rgb(131, 130, 130);
     cursor: pointer;
     padding: 18px;
-    width: 50%;
+    width: auto;
     border: none;
     text-align: left;
     outline: none;
@@ -45,9 +51,13 @@ header{
   }
   
   .active, .collapsible:hover {
+    cursor: url(img/cursordown.svg) , auto;
     background:transparent;
+    color: white;
   }
   
+  
+
   .content {
     padding: 0 18px;
     max-height: 0;
@@ -170,7 +180,8 @@ header{
     opacity: 1;
     transform: translate3d(0%, -30%, 100px);
   }
-  
+
+
 
 
   /*fondo*/
